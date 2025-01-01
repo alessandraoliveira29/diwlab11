@@ -15,18 +15,11 @@
 }
 
 body {
-  /* Box Model */
   margin: 0;
   padding: 0;
-  height: 100vh;
-
-  /* Layout e Posicionamento */
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  /* Fundo e Estética */
   background: url('https://cdn.pixabay.com/photo/2016/06/02/02/33/triangles-1430105_1280.png');
   background-size: cover; 
   background-position: center; 
@@ -34,14 +27,20 @@ body {
 }
 
 main {
-  /* Reset e Box Model */
-  width: 320px;
-  height: 450px;
+  max-width: 1200px; /* Aumenta a largura máxima do conteúdo */
+  margin: 0 auto; /* Centraliza o conteúdo */
   padding: 20px;
-  border-radius: 20px;
-  overflow-y: auto;
-
-  /* Fundo */
-  background: whitesmoke;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.9); /* Fundo semitransparente */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+nav a {
+  text-decoration: none;
+  color: white;
+  padding: 0.5rem 1rem;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}

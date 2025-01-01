@@ -1,0 +1,62 @@
+[
+  {
+    "title": "HTML",
+    "description": "Linguagem de marcação usada para criar a estrutura das páginas web.",
+    "rating": 5
+  },
+  {
+    "title": "CSS",
+    "description": "Estilos visuais para páginas web.",
+    "rating": 5
+  },
+  {
+    "title": "JavaScript",
+    "description": "Linguagem de programação para páginas web interativas.",
+    "rating": 5
+  },
+  {
+    "title": "JSON",
+    "description": "Formato leve para troca de dados.",
+    "rating": 4
+  },
+  {
+    "title": "API RESTful",
+    "description": "Arquitetura para comunicação entre sistemas.",
+    "rating": 4
+  },
+  {
+    "title": "Swagger",
+    "description": "Ferramenta para documentar APIs.",
+    "rating": 4
+  },
+  {
+    "title": "GitHub",
+    "description": "Plataforma para hospedagem e colaboração de código.",
+    "rating": 5
+  },
+  {
+    "title": "Codespaces",
+    "description": "Ambiente de desenvolvimento na nuvem.",
+    "rating": 4
+  },
+  {
+    "title": "GitHub Pages",
+    "description": "Serviço para hospedar páginas web estáticas.",
+    "rating": 4
+  },
+  {
+    "title": "React.js",
+    "description": "Biblioteca para construção de interfaces de usuário.",
+    "rating": 5
+  },
+  {
+    "title": "Next.js",
+    "description": "Framework React para renderização do lado do servidor.",
+    "rating": 5
+  },
+  {
+    "title": "Vercel",
+    "description": "Plataforma para hospedagem de aplicativos web modernos.",
+    "rating": 4
+  }
+]
