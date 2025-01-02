@@ -17,15 +17,19 @@ export default function ProdutosPage() {
     setCart((prevCart) => [...prevCart, product]);
   };
 
+  const removeItemFromCart = (productId: number) => {
+    setCart((prevCart) => prevCart.filter((product) => product.id !== productId));
+  };
+
   const buy = async () => {
     try {
       const response = await fetch('/api/deisishop/buy', {
         method: 'POST',
         body: JSON.stringify({
           products: cart.map((product) => product.id),
-          name: '', 
-          student: false, 
-          coupon: '', 
+          name: '',
+          student: false,
+          coupon: '',
         }),
         headers: {
           'Content-Type': 'application/json',
@@ -109,9 +113,17 @@ export default function ProdutosPage() {
             <ul>
               {cart.map((item, index) => (
                 <li key={index} className="border-b py-2">
-                  <div>
-                    <p className="font-bold">{item.title}</p>
-                    <p className="text-sm text-gray-600">${item.price.toFixed(2)}</p>
+                  <div className="flex items-center justify-between">
+                    <div>
+                      <p className="font-bold">{item.title}</p>
+                      <p className="text-sm text-gray-600">${item.price.toFixed(2)}</p>
+                    </div>
+                    <button
+                      onClick={() => removeItemFromCart(item.id)}
+                      className="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600 transition"
+                    >
+                      Remover
+                    </button>
                   </div>
                 </li>
               ))}
